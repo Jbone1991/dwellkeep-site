@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DwellKeep — AI-Powered Home Inventory</title>
+<meta name="description" content="DwellKeep is an AI-powered household inventory app. Snap a receipt, let AI catalog it, and generate insurance-ready PDF reports.">
+<style>
+:root { --navy: #1b2a41; --teal: #2d7d7a; --bg: #f7f9fb; --ink: #22303c; --muted: #5c6b7a; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.6; }
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+header { background: var(--navy); color: #fff; padding: 72px 0 64px; text-align: center; }
+header h1 { font-size: 2.6rem; letter-spacing: 0.5px; }
+header .tag { font-size: 1.25rem; color: #cfe3e2; margin-top: 10px; }
+.badge { display: inline-block; margin-top: 18px; background: var(--teal); color: #fff; padding: 6px 16px; border-radius: 999px; font-size: 0.85rem; letter-spacing: 0.5px; }
+section { padding: 48px 0; }
+section h2 { font-size: 1.5rem; color: var(--navy); margin-bottom: 16px; }
+.lead { font-size: 1.08rem; color: var(--muted); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 24px; }
+.card { background: #fff; border-radius: 12px; padding: 22px; box-shadow: 0 1px 4px rgba(27,42,65,0.08); }
+.card h3 { color: var(--teal); font-size: 1.05rem; margin-bottom: 8px; }
+.card p { font-size: 0.95rem; color: var(--muted); }
+.steps { counter-reset: step; margin-top: 20px; }
+.steps li { list-style: none; margin-bottom: 14px; padding-left: 46px; position: relative; }
+.steps li::before { counter-increment: step; content: counter(step); position: absolute; left: 0; top: 2px; width: 30px; height: 30px; border-radius: 50%; background: var(--navy); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.9rem; }
+.tech { font-size: 0.92rem; color: var(--muted); background: #eef2f6; border-radius: 8px; padding: 14px 18px; margin-top: 18px; }
+footer { background: var(--navy); color: #b9c6d4; padding: 36px 0; text-align: center; font-size: 0.9rem; }
+footer a { color: #9fd3d1; text-decoration: none; }
+.cta { display: inline-block; margin-top: 20px; background: var(--teal); color: #fff; padding: 12px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; }
+.cta:hover { background: #256a67; }
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<h1>DwellKeep</h1>
+<p class="tag">Know what you own. Prove it when it matters.</p>
+<span class="badge">Now in closed beta on Google Play</span>
+</div>
+</header>
+
+<section>
+<div class="wrap">
+<h2>What is DwellKeep?</h2>
+<p class="lead">DwellKeep is an AI-powered household inventory app. Photograph a receipt and DwellKeep's AI reads it, extracts every item, and files it into your home inventory automatically — so when an insurance claim, warranty dispute, or move happens, your proof of ownership is one tap away.</p>
+</div>
+</section>
+
+<section style="padding-top:0">
+<div class="wrap">
+<h2>Features</h2>
+<div class="grid">
+<div class="card"><h3>AI Receipt Scanning</h3><p>Snap a photo of any receipt. Claude-powered vision AI extracts items, prices, and dates into structured inventory records — no manual typing.</p></div>
+<div class="card"><h3>Organized Home Inventory</h3><p>Every item cataloged by room and category, with values, purchase dates, and receipt images attached.</p></div>
+<div class="card"><h3>Insurance-Ready PDF Reports</h3><p>Generate a complete, professional PDF of your household inventory for insurers, warranty claims, or estate planning.</p></div>
+<div class="card"><h3>Simple Subscription</h3><p>Free tier to get started; premium unlocks unlimited items and reporting. Managed securely in-app.</p></div>
+</div>
+</div>
+</section>
+
+<section style="padding-top:0">
+<div class="wrap">
+<h2>How it works</h2>
+<ol class="steps">
+<li>Snap a photo of a receipt — or add items manually.</li>
+<li>AI extracts items, prices, and dates, and files them by room and category.</li>
+<li>Export an insurance-ready PDF report whenever you need proof.</li>
+</ol>
+<p class="tech"><strong>Under the hood:</strong> Flutter &amp; Firebase (Firestore, Auth) with AI receipt understanding powered by the Anthropic Claude API and subscription infrastructure by RevenueCat.</p>
+</div>
+</section>
+
+<section style="padding-top:0">
+<div class="wrap">
+<h2>Try it</h2>
+<p class="lead">DwellKeep is currently in closed beta on Google Play. Want early access or a demo?</p>
+<a class="cta" href="mailto:jhiller1991@gmail.com?subject=DwellKeep%20Beta%20Access">Request Beta Access</a>
+</div>
+</section>
+
+<footer>
+<div class="wrap">
+<p>DwellKeep — built by Jesse Hiller · <a href="mailto:jhiller1991@gmail.com">jhiller1991@gmail.com</a></p>
+</div>
+</footer>
+
+</body>
+</html>
