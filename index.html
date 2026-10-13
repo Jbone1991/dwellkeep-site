@@ -37,7 +37,7 @@ footer a { color: #9fd3d1; text-decoration: none; }
 <div class="wrap">
 <h1>DwellKeep</h1>
 <p class="tag">Know what you own. Prove it when it matters.</p>
-<span class="badge">Now in closed beta on Google Play</span>
+<span class="badge">Available now on the App Store and Google Play</span>
 </div>
 </header>
 
@@ -55,7 +55,9 @@ footer a { color: #9fd3d1; text-decoration: none; }
 <div class="card"><h3>AI Receipt Scanning</h3><p>Snap a photo of any receipt. Claude-powered vision AI extracts items, prices, and dates into structured inventory records — no manual typing.</p></div>
 <div class="card"><h3>Organized Home Inventory</h3><p>Every item cataloged by room and category, with values, purchase dates, and receipt images attached.</p></div>
 <div class="card"><h3>Insurance-Ready PDF Reports</h3><p>Generate a complete, professional PDF of your household inventory for insurers, warranty claims, or estate planning.</p></div>
-<div class="card"><h3>Simple Subscription</h3><p>Free tier to get started; premium unlocks unlimited items and reporting. Managed securely in-app.</p></div>
+<div class="card"><h3>AI Home Assistant</h3><p>Ask questions about what you own and get help pulling together the details for an insurance or warranty claim.</p></div>
+<div class="card"><h3>Cloud Backup</h3><p>Sign in and your inventory, photos, and receipts sync to the cloud, so a lost phone doesn't mean lost records.</p></div>
+<div class="card"><h3>Free to Start</h3><p>A free tier covers the basics. Premium unlocks unlimited items, rooms, reports, and AI use.</p></div>
 </div>
 </div>
 </section>
@@ -68,15 +70,16 @@ footer a { color: #9fd3d1; text-decoration: none; }
 <li>AI extracts items, prices, and dates, and files them by room and category.</li>
 <li>Export an insurance-ready PDF report whenever you need proof.</li>
 </ol>
-<p class="tech"><strong>Under the hood:</strong> Flutter &amp; Firebase (Firestore, Auth) with AI receipt understanding powered by the Anthropic Claude API and subscription infrastructure by RevenueCat.</p>
+<p class="tech"><strong>Under the hood:</strong> one Flutter codebase shipping to iOS and Android. Firebase (Auth, Firestore, Storage) for accounts and sync. AI features run on the Anthropic Claude API through a server-side Cloud Functions proxy protected by Firebase App Check, so no API keys ship in the app. Subscriptions run on RevenueCat, iOS builds on Codemagic CI.</p>
 </div>
 </section>
 
 <section style="padding-top:0">
 <div class="wrap">
 <h2>Try it</h2>
-<p class="lead">DwellKeep is currently in closed beta on Google Play. Want early access or a demo?</p>
-<a class="cta" href="mailto:jhiller1991@gmail.com?subject=DwellKeep%20Beta%20Access">Request Beta Access</a>
+<p class="lead">DwellKeep is live on both app stores.</p>
+<a class="cta" href="https://apps.apple.com/us/app/dwellkeep/id6787948276">Download on the App Store</a>
+<a class="cta" href="https://play.google.com/store/apps/details?id=com.dwellkeep.app" style="margin-left:12px">Get it on Google Play</a>
 </div>
 </section>
 
